@@ -1,0 +1,15 @@
+export const renderTransactiob = (transactionData) => {
+  const cash = document.createElement("h3");
+  cash.textContent = transactionData.cash;
+
+  const names = document.createElement("p");
+  names.textContent = `${transactionData.senderName} enviou para ${recipientName}`;
+
+  const date = document.createElement("p");
+  date.textContent = transactionData.date;
+
+  const transaction = document.createElement("div");
+  transaction.append(cash, names, date);
+
+  document.querySelector("#transactionList").appendChild(transaction);
+};

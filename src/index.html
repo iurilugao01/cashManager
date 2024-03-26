@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CashManager</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Seu Saldo Atual:</h1>
+        <h2 id="atualCash">0</h2>
+
+        <form action="">
+          <h3>Nova transacao</h3>
+          <label for="transactionValue></label>
+          <input type="text" id="transactionValue" />
+
+          <fieldset>
+            <legend>Selecione o tipo de transacao:</legend>
+          
+            <div>
+              <input type="radio" id="debit" value="debit" checked />
+              <label for="debit">Debitar</label>
+            </div>
+          
+            <div>
+              <input type="radio" id="receive" name="drone" value="receive" />
+              <label for="receive">Receber</label>
+            </div>
+
+          </fieldset>
+
+          <label for="senderName">nome do remetente:</label>
+          <input type="text" id="senderName">
+
+          <label for="recipientName">nome do destinatario:</label>
+          <input type="text" id="recipientName">
+
+          <input type="submit">
+        </form>
+      </section>
+      <section id="transactionList">
+        <h1>lista de transacoes:</h1>
+      </section>
+    </main>
+  </body>
+</html>
